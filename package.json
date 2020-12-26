@@ -17,6 +17,7 @@
     "server": "concurrently -k npm:server:*",
     "server:rest": "json-server -q db.json",
     "server:graphql": "nodemon index.js",
-    "server:astronaut": "nodemon astronaut.js"
+    "server:astronaut": "nodemon astronaut.js",
+    "server:mission": "nodemon mission.js"
   }
 }
