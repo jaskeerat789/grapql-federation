@@ -31,7 +31,7 @@ const resolvers = {
     },
     Astronaut: {
         missions: async (astronaut) => {
-            const res = await fetch(`${apiUrl}/missions/${id}`);
+            const res = await fetch(`${apiUrl}/missions`);
             const missions = await res.json();
 
             return missions.filter(({ crew }) => crew.includes(parseInt(astronaut.id)))
